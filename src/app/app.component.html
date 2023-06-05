@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div class="row  my-4">
+    <div class="col-md-10">
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Url">
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-danger" (click)="getValue()">Check</button>
+
+    </div>
+  </div>
+
+  <h1>Audio 1 - {{currentFile}}</h1>
+  <audio [src]="currentFile" controls></audio>
+  <h1>Audio 2 - converted - {{converted}}</h1>
+  <audio [src]="converted" controls>
+  </audio>
+
+  <h2 class="mt-5">
+    Useful links
+  </h2>
+  <h3> working: <br>
+    https://pkdev.coplsaas.com.au/reports/output.mp3
+  </h3>
+
+  <br>
+  <br>
+  <h3> not working: <br>
+    https://pkdev.coplsaas.com.au/reports/1685371991196.attachment_1685371985371.m4a
+  </h3>
+</div>
+</body>
+</html>
